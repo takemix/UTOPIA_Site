@@ -184,7 +184,6 @@ export default function Home() {
             </div>
             <div className="venue-card__info">
               <p className="venue-card__name">Kieth Flack 1F</p>
-              <p className="venue-card__desc">テクノ・ハウスが鳴り響く夜</p>
               <a
                 className="venue-card__map"
                 href="https://www.google.com/maps/search/Kieth+Flack"
