@@ -405,6 +405,18 @@ img { display: block; max-width: 100%; height: auto; }
   border-radius: 12px;
   overflow: hidden;
 }
+@media (max-width: 539px) {
+  .info {
+    padding-inline: 1rem;
+  }
+  .info .container {
+    max-width: none;
+    padding-inline: 0.75rem;
+  }
+  .info-row {
+    padding: 1rem 1.25rem;
+  }
+}
 .info-row {
   display: flex;
   align-items: center;
