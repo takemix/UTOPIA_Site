@@ -309,7 +309,7 @@ img { display: block; max-width: 100%; height: auto; }
 ───────────────────────────────────────── */
 .profile {
   background: var(--red);
-  padding: 5rem 0.5rem;
+  padding: 5rem 1.5rem;
 }
 .profile-card {
   display: flex;
@@ -320,13 +320,25 @@ img { display: block; max-width: 100%; height: auto; }
   border: 2px solid rgba(245, 216, 0, 0.35);
   border-radius: 12px;
 }
+@media (max-width: 539px) {
+  .profile {
+    padding-inline: 1rem;
+  }
+  .profile .container {
+    max-width: none;
+    padding-inline: 0.75rem;
+  }
+  .profile-card {
+    padding: 1.75rem 1.5rem;
+  }
+}
 @media (min-width: 540px) {
   .profile-card { flex-direction: row; align-items: flex-start; }
 }
 .profile-card__photo {
   flex-shrink: 0;
   width: 100%;
-  max-width: 480px;
+  max-width: 240px;
   margin-inline: auto;
   border-radius: 10px;
   overflow: hidden;
