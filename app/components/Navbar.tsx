@@ -21,6 +21,7 @@ export default function Navbar() {
           <a href="#profile">PROFILE</a>
           <a href="#info">INFO</a>
           <a href="#venue">VENUE</a>
+          <a href="#contact">CONTACT</a>
         </div>
         <a href="#info" className="navbar__cta">
           <span className="navbar__cta-main">Charge Free!</span>
