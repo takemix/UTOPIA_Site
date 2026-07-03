@@ -254,7 +254,6 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: 0.85rem;
   letter-spacing: 0.06em;
   padding: 0.25rem 1rem;
-  border-radius: 5px;
   margin-bottom: 0.75rem;
 }
 .guest-dj {
@@ -289,7 +288,6 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 0.75rem 1rem;
   background: rgba(255, 255, 255, 0.09);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 8px;
 }
 .resident-card__arrow {
   color: var(--yellow);
@@ -318,7 +316,6 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 2rem;
   background: var(--dark-red);
   border: 2px solid rgba(245, 216, 0, 0.35);
-  border-radius: 12px;
 }
 @media (max-width: 539px) {
   .profile {
@@ -340,7 +337,6 @@ img { display: block; max-width: 100%; height: auto; }
   width: 100%;
   max-width: 240px;
   margin-inline: auto;
-  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
@@ -402,7 +398,6 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .info-table {
   border: 2px solid rgba(255, 255, 255, 0.18);
-  border-radius: 12px;
   overflow: hidden;
 }
 @media (max-width: 539px) {
@@ -450,7 +445,6 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 2rem;
   background: var(--dark-red);
   border: 2px solid rgba(245, 216, 0, 0.35);
-  border-radius: 12px;
 }
 @media (min-width: 540px) {
   .venue-card { flex-direction: row; align-items: center; }
@@ -464,7 +458,6 @@ img { display: block; max-width: 100%; height: auto; }
 .venue-card__logo-img {
   width: 160px;
   height: auto;
-  border-radius: 8px;
 }
 .venue-card__info {
   display: flex;
@@ -507,7 +500,6 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 2rem;
   background: rgba(255, 255, 255, 0.06);
   border: 2px solid rgba(245, 216, 0, 0.35);
-  border-radius: 12px;
 }
 .contact-card__head {
   display: flex;
@@ -550,7 +542,6 @@ img { display: block; max-width: 100%; height: auto; }
 .contact-field textarea {
   width: 100%;
   border: 2px solid rgba(255, 255, 255, 0.16);
-  border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   color: var(--white);
   font: 900 1rem var(--font);
