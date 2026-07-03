@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ContactForm from "./components/ContactForm";
 import Countdown from "./components/Countdown";
 import FadeUp from "./components/FadeUp";
 import Navbar from "./components/Navbar";
@@ -202,23 +201,6 @@ export default function Home() {
                 Googleマップで見る
               </a>
             </div>
-          </FadeUp>
-        </div>
-      </section>
-
-      <section className="contact" id="contact">
-        <div className="container">
-          <FadeUp>
-            <h2 className="section-title">CONTACT</h2>
-          </FadeUp>
-          <FadeUp className="contact-card">
-            <div className="contact-card__head">
-              <span className="badge">CONTACT FORM</span>
-              <p className="contact-card__lead">
-                イベントへのお問い合わせ、出演・撮影のご相談はこちらから。
-              </p>
-            </div>
-            <ContactForm />
           </FadeUp>
         </div>
       </section>
