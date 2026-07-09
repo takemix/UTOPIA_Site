@@ -22,7 +22,8 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: "UTOPIA — TECHNO & HOUSE PARTY",
-  description: "2026/7/23 Thu 20:00〜 @Kieth Flack 1F — CHARGE FREE!",
+  description:
+    "福岡のテクノシーンで20年間に渡りKieth Flackを拠点に2か月に1回開催されてきたテクノ&ハウスパーティー「UTOPIA」。レジデントDJに加えゲストDJを迎え贅沢な一夜をお届け。次回は2026/7/23 Thu 20:00〜、CHARGE FREE!(1 Drink Order)で開催。",
 };
 
 export default function RootLayout({
