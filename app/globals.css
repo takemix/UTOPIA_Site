@@ -35,6 +35,26 @@ img { display: block; max-width: 100%; height: auto; }
   margin-inline: auto;
   padding-inline: 1.5rem;
 }
+@media (max-width: 539px) {
+  .container {
+    max-width: none;
+    padding-inline: 0;
+  }
+  .lineup,
+  .timetable,
+  .profile,
+  .flyer-section,
+  .info,
+  .venue {
+    padding-inline: 0.4rem;
+  }
+  .fade-up {
+    width: 100%;
+  }
+  .footer {
+    padding-inline: 0.4rem;
+  }
+}
 .dashes {
   width: 100%;
   border-top: 3px dashed rgba(245, 216, 0, 0.7);
@@ -330,15 +350,8 @@ img { display: block; max-width: 100%; height: auto; }
   border: 2px solid rgba(255, 255, 255, 0.18);
 }
 @media (max-width: 539px) {
-  .timetable {
-    padding-inline: 1rem;
-  }
-  .timetable .container {
-    max-width: none;
-    padding-inline: 0.75rem;
-  }
   .timetable-row {
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.1rem;
   }
 }
 .timetable-row {
@@ -378,15 +391,8 @@ img { display: block; max-width: 100%; height: auto; }
   border: 2px solid rgba(245, 216, 0, 0.35);
 }
 @media (max-width: 539px) {
-  .profile {
-    padding-inline: 1rem;
-  }
-  .profile .container {
-    max-width: none;
-    padding-inline: 0.75rem;
-  }
   .profile-card {
-    padding: 1.75rem 1.5rem;
+    padding: 1.5rem 1.1rem;
   }
 }
 @media (min-width: 540px) {
@@ -462,15 +468,11 @@ img { display: block; max-width: 100%; height: auto; }
   overflow: hidden;
 }
 @media (max-width: 539px) {
-  .info {
-    padding-inline: 1rem;
-  }
-  .info .container {
-    max-width: none;
-    padding-inline: 0.75rem;
-  }
   .info-row {
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.1rem;
+  }
+  .venue-card {
+    padding: 1.5rem 1.1rem;
   }
 }
 .info-row {
