@@ -123,9 +123,39 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="timetable" id="timetable">
+        <div className="container">
+          <FadeUp>
+            <h2 className="section-title">TIMETABLE</h2>
+          </FadeUp>
+          <FadeUp className="timetable-table">
+            <div className="timetable-row">
+              <span className="timetable-row__time">20:00～21:00</span>
+              <span className="timetable-row__name">タキオン</span>
+            </div>
+            <div className="timetable-row">
+              <span className="timetable-row__time">21:00～22:00</span>
+              <span className="timetable-row__name">AIKO</span>
+            </div>
+            <div className="timetable-row">
+              <span className="timetable-row__time">22:00～22:40</span>
+              <span className="timetable-row__name">USHISHI</span>
+            </div>
+            <div className="timetable-row">
+              <span className="timetable-row__time">22:40～24:00</span>
+              <span className="timetable-row__name">MANAMI</span>
+            </div>
+            <div className="timetable-row">
+              <span className="timetable-row__time">24:00～LAST</span>
+              <span className="timetable-row__name">COBRA a.k.a. NORI</span>
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
       <section className="flyer-section">
         <FadeUp>
-          <p className="flyer-label">OFFICIAL FLYER</p>
+          <p className="flyer-label">FLYER</p>
         </FadeUp>
         <FadeUp className="flyer-img">
           <Image
