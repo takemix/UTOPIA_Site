@@ -148,6 +148,9 @@ img { display: block; max-width: 100%; height: auto; }
   .navbar__cta-sub { font-size: 0.75rem; }
 }
 @media (max-width: 540px) {
+  .navbar {
+    position: static;
+  }
   .navbar__links { display: none; }
   .navbar__cta {
     font-size: 0.85rem;
@@ -168,6 +171,13 @@ img { display: block; max-width: 100%; height: auto; }
   justify-content: center;
   overflow: hidden;
   padding: 5rem 1rem 3rem;
+}
+@media (max-width: 540px) {
+  .hero {
+    min-height: calc(100svh - 3.5rem);
+    justify-content: flex-start;
+    padding: 0.25rem 0.75rem 2rem;
+  }
 }
 .hero__bg-circle {
   position: absolute;
