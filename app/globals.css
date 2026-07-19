@@ -172,25 +172,6 @@ img { display: block; max-width: 100%; height: auto; }
   overflow: hidden;
   padding: 5rem 1rem 3rem;
 }
-@media (max-width: 540px) {
-  .hero {
-    min-height: calc(100svh - 3.5rem);
-    justify-content: flex-start;
-    padding: 0.25rem 0.75rem 1.25rem;
-  }
-  .hero__content {
-    gap: 1.15rem;
-  }
-  .hero__cta {
-    margin-top: 0.15rem;
-  }
-  .hero__scroll {
-    position: static;
-    left: auto;
-    bottom: auto;
-    margin-top: 0.85rem;
-  }
-}
 .hero__bg-circle {
   position: absolute;
   top: -12rem; right: -12rem;
@@ -267,6 +248,26 @@ img { display: block; max-width: 100%; height: auto; }
   justify-content: center;
   opacity: 0.6;
   animation: bounce 1.6s infinite;
+}
+@media (max-width: 540px) {
+  .hero {
+    min-height: calc(100svh - 3.5rem);
+    justify-content: flex-start;
+    padding: 0.25rem 0.75rem 1.25rem;
+  }
+  .hero__content {
+    gap: 1.15rem;
+  }
+  .hero__cta {
+    margin-top: 0.15rem;
+  }
+  .hero__scroll {
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin-top: 0.85rem;
+  }
 }
 
 /* カウントダウン */
