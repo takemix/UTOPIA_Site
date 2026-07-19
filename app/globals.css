@@ -117,7 +117,24 @@ img { display: block; max-width: 100%; height: auto; }
   opacity: 0.85;
 }
 .navbar__cta:hover { opacity: 0.85; }
-@media (max-width: 540px) { .navbar__links { display: none; } }
+@media (min-width: 541px) {
+  .navbar__logo { font-size: 1.4rem; }
+  .navbar__links { gap: 1.75rem; }
+  .navbar__links a { font-size: 1.05rem; }
+  .navbar__cta {
+    font-size: 0.95rem;
+    padding: 0.55rem 1.15rem;
+  }
+  .navbar__cta-sub { font-size: 0.75rem; }
+}
+@media (max-width: 540px) {
+  .navbar__links { display: none; }
+  .navbar__cta {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.05rem;
+  }
+  .navbar__cta-sub { font-size: 0.68rem; }
+}
 
 /* ─────────────────────────────────────────
    HERO
