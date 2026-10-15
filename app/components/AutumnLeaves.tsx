@@ -19,7 +19,7 @@ export default function AutumnLeaves({ variant = 0 }: { variant?: number }) {
           style={{
             left: `${(leaf.left + variant * 13) % 96}%`,
             top: `${(leaf.top + variant * 19) % 92}%`,
-            width: `clamp(55px, ${leaf.size / 12}vw, ${leaf.size}px)`,
+            width: `clamp(85px, ${leaf.size / 8}vw, ${Math.round(leaf.size * 1.5)}px)`,
             transform: `rotate(${leaf.angle + variant * 31}deg)`,
           }}
           focusable="false"
