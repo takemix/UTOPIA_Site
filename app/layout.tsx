@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
-import { Nunito, Noto_Sans_JP, Space_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { headers } from "next/headers";
+import { Nunito, Space_Mono } from "next/font/google";
 import "./globals.css";
 
 const nunito = Nunito({
@@ -8,23 +9,53 @@ const nunito = Nunito({
   variable: "--font-nunito",
 });
 
-const notoSansJP = Noto_Sans_JP({
-  subsets: ["latin"],
-  weight: ["400", "900"],
-  variable: "--font-noto-sans-jp",
-});
-
 const spaceMono = Space_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-space-mono",
 });
 
-export const metadata: Metadata = {
-  title: "UTOPIA — TECHNO & HOUSE PARTY",
-  description:
-    "福岡のテクノシーンで20年間に渡りKieth Flackを拠点に2か月に1回開催されてきたテクノ&ハウスパーティー「UTOPIA」。レジデントDJに加えゲストDJを迎え贅沢な一夜をお届け。次回は2026/7/23 Thu 20:00〜、CHARGE FREE!(1 Drink Order)で開催。",
+const siteDescription =
+  "UTOPIA — TECHNO & HOUSE PARTY。2026/11/19 Thu 20:00〜 @KIETH FLACK 1F。GUEST DJ DJ OSAWA (3D)。CHARGE FREE! (1Drink Order)";
+
+export const viewport: Viewport = {
+  themeColor: "#8c3e70",
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  const requestHeaders = await headers();
+  const host =
+    requestHeaders.get("x-forwarded-host") ??
+    requestHeaders.get("host") ??
+    "localhost:3000";
+  const protocol =
+    requestHeaders.get("x-forwarded-proto") ??
+    (host.startsWith("localhost") ? "http" : "https");
+  const origin = `${protocol}://${host}`;
+
+  return {
+    title: "UTOPIA — 2026/11/19 GUEST DJ DJ OSAWA",
+    description: siteDescription,
+    metadataBase: new URL(origin),
+    openGraph: {
+      title: "UTOPIA — 2026/11/19 GUEST DJ DJ OSAWA",
+      description: siteDescription,
+      images: [`${origin}/images/utopia1119_insta.png`],
+      type: "website",
+      locale: "ja_JP",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "UTOPIA — 2026/11/19 GUEST DJ DJ OSAWA",
+      description: siteDescription,
+      images: [`${origin}/images/utopia1119_insta.png`],
+    },
+    icons: {
+      icon: "/favicon.svg",
+      shortcut: "/favicon.svg",
+    },
+  };
+}
 
 export default function RootLayout({
   children,
@@ -34,7 +65,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${nunito.variable} ${notoSansJP.variable} ${spaceMono.variable}`}
+      className={`${nunito.variable} ${spaceMono.variable}`}
     >
       <body>{children}</body>
     </html>

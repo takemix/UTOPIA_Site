@@ -15,7 +15,9 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? " scrolled" : ""}`} id="navbar">
       <div className="navbar__inner">
-        <span className="navbar__logo">UTOPIA</span>
+        <a className="navbar__logo" href="#top">
+          UTOPIA
+        </a>
         <div className="navbar__links">
           <a href="#lineup">LINE-UP</a>
           <a href="#profile">PROFILE</a>
