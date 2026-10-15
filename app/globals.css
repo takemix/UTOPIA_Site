@@ -825,3 +825,9 @@ img {
   position: relative;
   z-index: 1;
 }
+
+@media (min-width: 1024px) {
+  .hero .autumn-leaf {
+    scale: 1.3;
+  }
+}
