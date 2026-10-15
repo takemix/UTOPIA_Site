@@ -229,8 +229,8 @@ img {
 .hero__bg-circle {
   position: absolute;
   inset: 0;
-  background: url("/images/autumn-maple-frame.png") center / 100% auto repeat-y;
-  opacity: 0.18;
+  background: url("/images/autumn-maple-frame.png") center / 75% auto repeat-y;
+  opacity: 0.10;
   pointer-events: none;
 }
 
@@ -811,7 +811,7 @@ img {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url("/images/autumn-maple-frame.png") center / 100% auto repeat-y;
-  opacity: 0.1;
+  background: url("/images/autumn-maple-frame.png") center / 75% auto repeat-y;
+  opacity: 0.06;
   pointer-events: none;
 }
