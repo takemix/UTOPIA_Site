@@ -1,3 +1,4 @@
+import AutumnLeaves from "./components/AutumnLeaves";
 import Countdown from "./components/Countdown";
 import FadeUp from "./components/FadeUp";
 import Navbar from "./components/Navbar";
@@ -8,8 +9,7 @@ export default function Home() {
       <Navbar />
 
       <section className="hero" aria-label="UTOPIA">
-        <div className="hero__bg-circle" />
-        <div className="hero__bg-square" />
+        <AutumnLeaves />
         <div className="hero__content">
           <p className="hero__tagline">{"\\ TECHNO & HOUSE PARTY //"}</p>
           <div className="hero__logo-wrap">
@@ -51,6 +51,7 @@ export default function Home() {
       </section>
 
       <section className="lineup" id="lineup">
+        <AutumnLeaves variant={1} />
         <div className="container">
           <FadeUp>
             <h2 className="section-title">LINE-UP</h2>
@@ -90,6 +91,7 @@ export default function Home() {
       </section>
 
       <section className="profile" id="profile">
+        <AutumnLeaves variant={2} />
         <div className="container">
           <FadeUp>
             <h2 className="section-title">GUEST DJ</h2>
@@ -117,6 +119,7 @@ export default function Home() {
       </section>
 
       <section className="info" id="info">
+        <AutumnLeaves variant={3} />
         <div className="container">
           <FadeUp>
             <h2 className="section-title">EVENT INFO</h2>
@@ -151,6 +154,7 @@ export default function Home() {
       </section>
 
       <section className="venue" id="venue">
+        <AutumnLeaves variant={4} />
         <div className="container">
           <FadeUp>
             <h2 className="section-title">VENUE</h2>

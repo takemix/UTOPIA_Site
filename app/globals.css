@@ -794,7 +794,6 @@ img {
   }
 }
 
-/* Keep the supplied white maple frame subtle behind the content. */
 .lineup,
 .profile,
 .info,
@@ -803,15 +802,26 @@ img {
   isolation: isolate;
 }
 
-.lineup::before,
-.profile::before,
-.info::before,
-.venue::before {
-  content: "";
+.autumn-leaves {
   position: absolute;
   inset: 0;
-  z-index: -1;
-  background: url("/images/autumn-maple-frame.png") center / 75% auto repeat-y;
-  opacity: 0.06;
+  overflow: hidden;
   pointer-events: none;
+  z-index: 0;
+}
+
+.autumn-leaf {
+  position: absolute;
+  height: auto;
+  aspect-ratio: 1;
+  opacity: 0.085;
+  overflow: hidden;
+}
+
+.lineup > .container,
+.profile > .container,
+.info > .container,
+.venue > .container {
+  position: relative;
+  z-index: 1;
 }
