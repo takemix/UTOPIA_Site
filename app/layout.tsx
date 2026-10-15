@@ -16,7 +16,7 @@ const spaceMono = Space_Mono({
 });
 
 const siteDescription =
-  "UTOPIA — TECHNO & HOUSE PARTY。2026/11/19 Thu 20:00〜 @KIETH FLACK 1F。GUEST DJ DJ OSAWA (3D)。CHARGE FREE! (1Drink Order)";
+  "UTOPIA — TECHNO & HOUSE PARTY。2026/11/19 Thu 20:00〜1:00 @KIETH FLACK 1F。GUEST DJ DJ OSAWA (3D)。CHARGE FREE! (1Drink Order)";
 
 export const viewport: Viewport = {
   themeColor: "#8c3e70",

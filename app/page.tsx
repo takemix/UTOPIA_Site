@@ -17,7 +17,7 @@ export default function Home() {
           </div>
           <div className="dashes" />
           <div className="hero__date">
-            <p className="date-main">2026/11/19 Thu 20:00〜</p>
+            <p className="date-main">2026/11/19 Thu 20:00〜1:00</p>
             <p className="date-venue">@KIETH FLACK 1F</p>
             <p className="date-charge">CHARGE FREE! (1Drink Order)</p>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
             </div>
             <div className="info-row">
               <span className="info-row__label">TIME</span>
-              <span className="info-row__val">20:00〜</span>
+              <span className="info-row__val">20:00〜1:00</span>
             </div>
             <div className="info-row">
               <span className="info-row__label">VENUE</span>
